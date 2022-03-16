@@ -7,20 +7,23 @@ public class MainApp {
 
         // Hej mamo - jesteś SUPER!
 
-        PC officeComputer = new PC("Office computer", "HP", 500, 128);
+        PC officeComputer1 = new PC("Office computer", "HP", 500, 128);
+        PC officeComputer2 = new PC("Office computer", "HP", 500, 128);
+        PC officeComputer3 = new PC("Office computer", "HP", 500, 128);
         Laptop gamingLaptop = new Laptop("XGames", "HP GAMES", 500, 256, 50);
+        Laptop mackbook = new Laptop("XGames", "HP GAMES", 500, 256, 50);
 
 //        gamingLaptop.setBatteryLevel(70);
 //        gamingLaptop.switchOn();
 //        System.out.println(gamingLaptop.getSate());
+        System.out.println(mackbook);
 
+        officeComputer1.switchOn();
+        System.out.println(officeComputer1.getSate());
 
-        officeComputer.switchOn();
-        System.out.println(officeComputer.getSate());
-
-        officeComputer.setPowerSupply(true);
-        officeComputer.switchOn();
-        System.out.println(officeComputer.getSate());
+        officeComputer1.setPowerSupply(true);
+        officeComputer1.switchOn();
+        System.out.println(officeComputer1.getSate());
 
     }
 }
